@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="EstiloJS.css">
+        
+        <title>Teste de média</title>
+    </head>
+
+    <body>
+
+        <form id="digitarnotas">
+
+            <p></p>
+            <label>Primeira nota</label>
+            <input type="number" id="primeiranota" placeholder="Nota 1" step="0.01" required>
+
+            <hr>
+
+            <p></p>
+            <label>Segunda nota</label>
+            <input type="number" id="segundanota" placeholder="Nota 2" step="0.01" required>
+
+            <hr>
+
+            <p></p>
+            <button type="button" id="botao" onclick="Inserirmedia()">Calcular Média</button>
+
+            
+        </form>
+        <script src="calcularmedia.js" type="text/javascript"></script>
+    </body>
+    </html>
