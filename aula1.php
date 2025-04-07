@@ -5,8 +5,8 @@
 class Pessoa {
   //Características da classe pessoa
   public $nome;
-  public $idade;
-
+  public $idade;  
+    //atualizando
   //Métodos ou fuções, que funcionam como ações dos objetos, nesse caso, pessoas
 
   //Para utilizar os atributos e métodos dentro do escopo da classe, precisa utilizar o "this->" (que quer dizer "este")
