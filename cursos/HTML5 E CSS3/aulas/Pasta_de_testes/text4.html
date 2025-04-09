@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 01</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando média de um aluno</h1>
+    <button id="media" onclick="calcularmedia()">Calcular média</button>
+    <p id="res1"></p>
+    <p id="res2"></p>
+
+    <script>
+        function calcularmedia() {
+            var res1 = window.document.getElementById('res1')
+            var res2 = window.document.getElementById('res2')
+
+            var nome = window.prompt('Qual é seu nome, aluno? ')
+            var n1 = Number(window.prompt(`Qual foi sua primeira nota, ${nome}?`))
+            var n2 = Number(window.prompt(`Além de ${n1}, qual foi sua outra nota, ${nome}?`))
+            
+            var n1 = parseFloat(n1)
+            var n2 = parseFloat(n2)
+
+            var med = (n1 + n2) / 2
+            
+            res1.style.color='red'
+            res1.innerText=`As notas obtidas foram ${n1} e ${n2}.`
+
+            res2.innerText=`${nome}, sua média foi de ${med}.`
+        }
+    </script>
+</body>
+</html>

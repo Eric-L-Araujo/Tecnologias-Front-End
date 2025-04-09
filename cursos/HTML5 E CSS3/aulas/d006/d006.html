@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Conversor de medidas</h1>
+    <button id="converter" onclick="convertermedidas()">Converter</button>
+    <h1 id="res">Clique no botão acima para iniciar</h1>
+
+    <button onclick="convertC()">Converter C°</button>
+
+    <p id="res_c"></p>
+
+
+    <script>
+
+    
+
+        function convertC() {
+            let celsius = parseFloat(window.prompt('Digite uma temperatura em °C (Celsius'))
+
+            let res_c = document.getElementById('res_c')
+
+            let convertFare = celsius * 9/5 + 32
+
+            res_c.innerText=`A temperatura em Fahrenheit é de ${convertFare}°F`
+        }
+
+    </script>
+</body>
+</html>

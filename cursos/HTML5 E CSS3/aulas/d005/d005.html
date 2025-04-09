@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Conversor de medidas</h1>
+    <button id="converter" onclick="convertermedidas()">Converter</button>
+    <h1 id="res">Clique no botão acima para iniciar</h1>
+
+    <button onclick="convertC()">Converter C°</button>
+
+    <p id="res_c"></p>
+    <p id="res_metro"></p>
+    <p id="res_hm"></p>
+    <p id="res_dam"></p>
+    <p id="res_dm"></p>
+    <p id="res_cm"></p>
+    <p id="res_mm"></p>
+
+    <script>
+
+       function convertermedidas() {
+
+            //Unidades de medidas
+            let inicio = document.getElementById('res')
+            let res_metro = document.getElementById('res_metro')
+            let res_hm = document.getElementById('res_hm')
+            let res_dam = document.getElementById('res_dam')
+            let res_dm = document.getElementById('res_dm')
+            let res_cm = document.getElementById('res_cm')
+            let res_mm = document.getElementById('res_mm')
+
+            let metros = window.parseFloat(window.prompt('Digite uma distância em metros (m)'))
+
+            //Conversões
+            let km = metros*0.001
+            let Hm = metros*0.01
+            let Dam = metros*0.1
+            let dm = metros*10
+            let cm = metros*100
+            let mm = metros*1000
+            
+            //Resultados
+            inicio.innerText=`A distância de ${metros} metros, corresponde a...`
+
+            res_metro.innerText=`${km.toFixed(2).replace('.',',')} quilômetros (Km)`
+
+            res_hm.innerText=`${Hm.toFixed(2).replace('.',',')} Hectômetros (Hm)`
+
+            res_dam.innerText=`${Dam.toFixed(2).replace('.',',')} Decâmetros (Dam)`
+
+            res_dm.innerText=`${dm.toFixed(2).replace('.',',')}  Decímetros (dm)`
+
+            res_cm.innerText=`${cm.toFixed(2).replace('.',',')} Centímetros (cm)`
+            
+            res_mm.innerText=`${mm.toFixed(2).replace('.',',')} milímetros (mm)`
+         
+        }
+
+        function convertC() {
+            let celsius = parseFloat(window.prompt('Digite uma temperatura em °C (Celsius'))
+
+            let res_c = document.getElementById('res_c')
+
+            let convertFare = celsius * 9/5 + 32
+
+            res_c.innerText=`A temperatura em Fahrenheit é de ${convertFare}°F`
+        }
+
+    </script>
+</body>
+</html>

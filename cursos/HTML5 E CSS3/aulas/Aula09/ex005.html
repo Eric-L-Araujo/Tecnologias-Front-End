@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(37, 37, 37);
+            color: antiquewhite;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+    <h1>Estudando com DOM</h1>
+    <p>resultado aqui?</p>
+    <p>Clique aqui</p>
+    <div id="msg">Eae galera!!!</div>
+
+
+    <script>
+
+        // var corpo = window.document.body
+        // corpo.style.background = 'gray'
+        // var p1 = document.getElementsByTagName('p')[0]
+
+        // window.document.write(p1.innerHTML)
+
+        // var d = window.document.getElementById('msg')
+        // d.style.color = 'black'
+        // d.style.background = 'white'
+        // d.innerText = 'Está sendo muito legal aprender DOM'
+
+        var d = window.document.querySelector('div#msg')
+
+        d.style.background = 'RGB(0,10,50)'
+
+        d.innerHTML = 'PORRA'
+
+    </script>
+</body>
+</html>

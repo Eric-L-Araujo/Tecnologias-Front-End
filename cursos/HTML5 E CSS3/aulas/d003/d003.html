@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e depois</title>
+    <style>
+        
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <button id="iniciar" onclick="antesedepois()">Antecessor e Sucessor</button>
+
+    <script>
+        function antesedepois() {
+            let num = parseInt(window.prompt('Digite um número inteiro qualquer'))
+
+            let ant = num-1
+
+            let dep = num+1
+                                                                //Obs: Para quebrar a linha, só utilizar o "\n" onde você quer quebrar
+            window.alert(`Antes do ${num}, temos o número ${ant}.\nDepois de ${num}, temos o número ${dep}.`) 
+
+                                                                                                              
+
+        }
+       
+    </script>
+</body>
+</html>

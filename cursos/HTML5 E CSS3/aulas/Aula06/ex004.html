@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">Insira um valor: </label>
+    <input type="text" id=numero size="10px">
+    <button type="button" id="converter" onclick="ConverterBRL()">Converter em BRL</button>
+    <h1 id="texto"></h1>
+
+
+    <script>
+        function ConverterBRL (){
+            var texto = document.getElementById('texto')
+            var numero = document.getElementById('numero').value
+
+            numero = Number(numero)
+            
+
+            alert(`O valor inserido é de ${numero.toLocaleString('pt-BR',{style:"currency",currency: "BRL"})}`)
+        
+
+        }
+       
+    </script>
+</body>
+</html>

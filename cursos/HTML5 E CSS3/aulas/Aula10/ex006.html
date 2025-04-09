@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Javascript</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Eventos com DOM</h1>
+    <button id="bt1">Clique aqui</button>
+    
+    <script>
+
+        var bt1 = document.getElementById('bt1')
+
+      function clicar(){
+        let bt = document.getElementById('bt1')
+        bt.innerText = 'Clicou!'
+      }
+
+      function saiu(){
+        let bt2 = document.getElementById('bt1')
+        bt2.innerText = 'Saiu'
+      }
+
+      bt1.addEventListener('click',clicar)
+      bt1.addEventListener('mouseout',saiu)
+
+    </script>
+</body>
+</html>

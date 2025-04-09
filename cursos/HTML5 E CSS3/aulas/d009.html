@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular desconto</title>
+    <style>
+        
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Calcular desconto</h1>
+    <button type="button" id="botao">Desconto de 10%</button>
+    <p id="res">Clique no botão acima para iniciar</p>
+
+    <script>
+
+        var botao = document.getElementById('botao')
+
+        botao.addEventListener('click', desconto)
+
+        
+
+
+
+        function desconto() {
+            var res = document.querySelector('p#res')
+
+            let produto = window.prompt('Qual é o produto que você está comprando?')
+
+            let preco = Number(window.prompt(`Qual é o preço de ${produto}?`))
+
+            let porcentagem = 10
+
+            let calculo = (preco*porcentagem) / 100
+
+            res.innerHTML = `Você recebeu ${calculo} reais de desconto`
+        }
+    </script>
+</body>
+</html>
