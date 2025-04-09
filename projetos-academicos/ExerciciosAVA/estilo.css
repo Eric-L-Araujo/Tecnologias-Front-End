@@ -1,0 +1,16 @@
+body {
+
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    color: orange;
+}
+
+.classe {
+    background-color: orange;
+    color: white;
+    width: 1000px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+    

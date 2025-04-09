@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de cadastro</title>
+</head>
+
+<!-- o parâmetro onload + a função, é para carregar a função assim que iniciar o site. -->
+<body>
+    <form action="#" id="form-cadastro" onsubmit="formulario(event)">
+
+        <header>
+            <h1>Cadastre-se</h1>
+        </header>
+        
+        <section>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Eric Araujo</p>
+        </footer>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

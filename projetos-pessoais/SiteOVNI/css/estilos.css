@@ -1,0 +1,90 @@
+/* .container {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    width: 20rem;
+    height: 25rem;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    color: aliceblue;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+
+/* Deixa os elementos no meio */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size:18px;
+    background-image: url(../backgroundOVNI.png);
+    background-size: 1600px 773px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+cabecalho {
+    display: flex;
+    margin-bottom: 4rem;
+
+}
+
+
+.container {
+    padding: 16px;
+    border-style: solid;
+    width: 40rem;
+    height: 40rem;
+    background-color: #28719e;
+    border-radius: 5px;
+
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8rem 2.8rem;
+}
+
+.caixa-input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.caixa-input label {
+    position: absolute;
+    top: -8px;
+    bottom: 50%;
+    left: 8px;
+    padding: 0 2px;
+    
+}
+
+.caixa-input input {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}

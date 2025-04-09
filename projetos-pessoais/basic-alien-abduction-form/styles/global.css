@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  
+  border: none;
+  outline: none;
+}
+
+:root {
+  --text-color-light: rgb(17, 17, 17);
+  --text-color-dark: rgb(238, 238, 238);
+  --primary-color: rgb(0, 255, 128);
+  --secondary-color: rgb(50, 205, 50);
+  --error-color: rgb(199, 56, 56);
+  --background-color: rgb(34, 34, 34);
+
+  --button-bg-primary: rgba(19, 226, 123, 0.1);
+  --button-bg-primary-highlight: rgba(0, 255, 128, 0.2);
+  --button-bg-secondary-highlight: rgba(50, 205, 50, 0.2);
+
+  --input-bg-dark: rgb(202, 202, 202);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-color);
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* you can chose any size here 16 is default */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--text-color-dark);
+
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 45%;
+  }
+}
